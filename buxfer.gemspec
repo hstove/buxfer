@@ -19,4 +19,5 @@ Gem::Specification.new do |s|
   s.summary = %q{A library providing access to buxfer (www.buxfer.com) API based on HTTParty.}
   
   s.add_dependency(%q<httparty>, [">= 0", "= 0.5.0"])
+  s.add_dependency "activesupport"
 end
