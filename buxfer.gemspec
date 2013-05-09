@@ -17,20 +17,6 @@ Gem::Specification.new do |s|
   s.rubyforge_project = %q{buxfer}
   s.rubygems_version = %q{1.3.5}
   s.summary = %q{A library providing access to buxfer (www.buxfer.com) API based on HTTParty.}
-
-  if s.respond_to? :specification_version then
-    current_version = Gem::Specification::CURRENT_SPECIFICATION_VERSION
-    s.specification_version = 3
-
-    if Gem::Version.new(Gem::RubyGemsVersion) >= Gem::Version.new('1.2.0') then
-      s.add_runtime_dependency(%q<activesupport>, [">= 0", "= 2.3.4"])
-      s.add_runtime_dependency(%q<httparty>, [">= 0", "= 0.5.0"])
-    else
-      s.add_dependency(%q<activesupport>, [">= 0", "= 2.3.4"])
-      s.add_dependency(%q<httparty>, [">= 0", "= 0.5.0"])
-    end
-  else
-    s.add_dependency(%q<activesupport>, [">= 0", "= 2.3.4"])
-    s.add_dependency(%q<httparty>, [">= 0", "= 0.5.0"])
-  end
+  
+  s.add_dependency(%q<httparty>, [">= 0", "= 0.5.0"])
 end
