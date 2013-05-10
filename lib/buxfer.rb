@@ -4,8 +4,6 @@ require 'ostruct'
 
 module Buxfer
   class Response < OpenStruct
-    undef_method :id
-    undef_method :type
   end
 end
 
